@@ -47,7 +47,7 @@ const Home = () => {
                   <td className="whitespace-nowrap px-6 py-4">{user.email}</td>
                   <td className="whitespace-nowrap px-6 py-4">
                     <div className="flex space-x-3 items-center">
-                      <button className='bg-green-600 text-white px-4 py-2 rounded-md'>Edit</button>
+                      <Link to={`update/${user.id}`} className='bg-green-600 text-white px-4 py-2 rounded-md'>Edit</Link>
                       <button className='bg-red-600 text-white px-4 py-2 rounded-md' onClick={()=>deleteUser(user.id)}>Delete</button>
                     </div>
                   </td>
